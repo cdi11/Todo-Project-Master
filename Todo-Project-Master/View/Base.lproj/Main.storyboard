@@ -136,7 +136,7 @@
         <!--RegisterViewController-->
         <scene sceneID="ZoZ-cG-Rcl">
             <objects>
-                <viewController title="RegisterViewController" id="GTu-vd-ime" sceneMemberID="viewController">
+                <viewController title="RegisterViewController" id="GTu-vd-ime" customClass="RegisterViewController" customModule="Todo_Project_Master" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Qkx-0g-deh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -165,7 +165,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="OSR-JU-p3b" kind="show" identifier="goToTodo" id="XYp-iT-lzZ"/>
+                                    <action selector="registerButtonPressed:" destination="GTu-vd-ime" eventType="touchUpInside" id="R5F-2E-6qm"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -173,6 +173,11 @@
                         <viewLayoutGuide key="safeArea" id="zeG-Dy-0c1"/>
                     </view>
                     <navigationItem key="navigationItem" title="Register" id="j5U-3B-h4v"/>
+                    <connections>
+                        <outlet property="emailTextfield" destination="Slq-cO-bnm" id="ddF-iP-aS8"/>
+                        <outlet property="passwordTextfield" destination="axL-nH-ws4" id="HI7-mc-G3X"/>
+                        <segue destination="OSR-JU-p3b" kind="show" id="epK-7U-Any"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rvn-sy-oXr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -297,6 +302,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="XYp-iT-lzZ"/>
+        <segue reference="epK-7U-Any"/>
     </inferredMetricsTieBreakers>
 </document>

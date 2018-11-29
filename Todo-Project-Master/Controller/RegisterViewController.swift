@@ -21,7 +21,9 @@ class RegisterViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
-    @IBAction func registerPressed(_ sender: AnyObject){
+    @IBAction func registerButtonPressed(_ sender: AnyObject){
+        
+    
         
         //TODo: Set up a new user on our firebase database
         
@@ -37,6 +39,8 @@ class RegisterViewController: UIViewController {
                 self.performSegue(withIdentifier: "goToTodo", sender: self)
             }
         }
+        
+        
         
     }
 }
