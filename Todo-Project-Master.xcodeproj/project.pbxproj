@@ -71,10 +71,18 @@
 		9611266421782B4C003297A1 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				961E525A21AF7B9600DCD09B /* Custom Cell */,
 				967E8999217589470006042B /* LaunchScreen.storyboard */,
 				967E8994217589460006042B /* Main.storyboard */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		961E525A21AF7B9600DCD09B /* Custom Cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Custom Cell";
 			sourceTree = "<group>";
 		};
 		967E8984217589460006042B = {
