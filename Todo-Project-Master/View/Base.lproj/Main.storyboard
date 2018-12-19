@@ -166,6 +166,7 @@
                                 </state>
                                 <connections>
                                     <action selector="registerButtonPressed:" destination="GTu-vd-ime" eventType="touchUpInside" id="R5F-2E-6qm"/>
+                                    <segue destination="uaL-Kl-cVI" kind="show" identifier="goToTodo" id="kj7-u1-4A4"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -182,7 +183,7 @@
             </objects>
             <point key="canvasLocation" x="1028" y="-366"/>
         </scene>
-        <!--View Controller-->
+        <!--BackLog-->
         <scene sceneID="XRY-mx-7R0">
             <objects>
                 <viewController id="C6n-HM-W9a" sceneMemberID="viewController">
@@ -202,12 +203,12 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e8b-NW-QOQ">
-                                                    <rect key="frame" x="156" y="6" width="46" height="30"/>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E9h-N7-uR0">
+                                                    <rect key="frame" x="164" y="6" width="46" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <state key="normal" title="Button"/>
                                                     <connections>
-                                                        <segue destination="q13-5e-9sh" kind="show" id="5XW-Xy-H7f"/>
+                                                        <segue destination="q13-5e-9sh" kind="show" id="pp7-XD-AdW"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -219,7 +220,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="eNd-rx-Yl9"/>
                     </view>
-                    <navigationItem key="navigationItem" id="pgM-4T-ZM5">
+                    <navigationItem key="navigationItem" title="BackLog" id="pgM-4T-ZM5" userLabel="next">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="NUI-Qi-dY8"/>
                     </navigationItem>
                 </viewController>
@@ -230,7 +231,6 @@
         <!--View Controller-->
         <scene sceneID="iCw-ug-pWM">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Y7y-qo-Vqa" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="q13-5e-9sh" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zLL-01-jOV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -243,6 +243,11 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vml-Fj-8bO">
+                                <rect key="frame" x="164" y="212" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="p4B-Gy-nvk"/>
@@ -250,6 +255,7 @@
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y7y-qo-Vqa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4018" y="7"/>
         </scene>
@@ -320,4 +326,7 @@
             <point key="canvasLocation" x="2077.5999999999999" y="6.746626686656672"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="kj7-u1-4A4"/>
+    </inferredMetricsTieBreakers>
 </document>
