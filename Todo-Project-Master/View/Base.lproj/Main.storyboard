@@ -191,7 +191,7 @@
         <!--BackLog-->
         <scene sceneID="XRY-mx-7R0">
             <objects>
-                <viewController id="C6n-HM-W9a" sceneMemberID="viewController">
+                <viewController id="C6n-HM-W9a" customClass="BacklogViewController" customModule="Todo_Project_Master" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wwE-8Q-zzL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

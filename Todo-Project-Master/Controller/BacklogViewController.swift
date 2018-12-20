@@ -9,7 +9,7 @@ import UIKit
 import Foundation
 import Firebase
 
-class BacklogViewController: UITableViewController {
+class BacklogViewController: UIViewController {
    //var itemArray = [Item]()
     
     
