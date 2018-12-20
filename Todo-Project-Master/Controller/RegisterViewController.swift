@@ -36,7 +36,7 @@ class RegisterViewController: UIViewController {
                 //success
                 print("Registration Successful!")
                 
-                self.performSegue(withIdentifier: "goToTodo", sender: self)
+                self.performSegue(withIdentifier: "goToTodoR", sender: self)
             }
         }
         
