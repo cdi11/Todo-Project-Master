@@ -30,6 +30,9 @@ class BacklogViewController: UIViewController {
             //What will happen when the user hits button on UI alert
          print("this is added")
         }
+        
+        alert.addAction(action)
+        self.present(alert, animated: true, completion: nil)
     }
     
 }
